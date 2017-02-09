@@ -1,0 +1,315 @@
+/*产品中心的页面主体部分*/
+.rightContent{
+	margin-bottom: 100px;
+}
+.rightContent .content1 .imgleft{
+	float: left;
+	width: 242px;
+}
+.rightContent .content1 .imgleft img{
+	width: 100%;
+}
+.rightContent .content1 .contentright{
+	float: right;
+	width: 538px;
+}
+.rightContent .content1 .contentright h4{
+	font-weight: bold;
+}
+.rightContent .content1 .contentright ul li{
+	font-style: 16px;
+	line-height: 32px;
+}
+.rightContent .content1 .contentright input{
+	border: none;
+	background: #A1000A;
+	width: 116px;
+	height: 30px;
+	color: white;
+	border-radius: 10px;
+	background: -moz-linear-gradient(#dc4242,#be0000);
+	background: -webkit-linear-gradient(#dc4242,#be0000);
+}
+.rightContent .content1 .contentright input:active{
+	padding-left: 4px;
+}
+.rightContent .content2 .tab{
+	border-bottom: 2px solid #E6E6E6;
+	margin-top: 30px;
+}
+.rightContent .content2 .tab li{ 
+	float: left;
+	line-height: 32px;
+	cursor: pointer;
+	margin-right: 26px;
+	padding: 0 20px;
+}
+.rightContent .content2 .tab .current{
+	border: 1px solid #E6E6E6;
+	border-bottom: none;
+	background-color: white;
+	position: relative;
+	bottom: -2px;
+	background-color: white;
+	padding: 0 20px;
+}
+.rightContent .content2 .tab a{
+	text-decoration: none;
+}
+.rightContent .content2 .tab li:first-child{
+	margin-left: 20px;
+}
+.rightContent .content2 .tab .current a{
+	
+}
+.tabContent{
+	padding-left:20px;
+	padding-top: 30px;
+}
+.tabContent .tip{
+	color:#C61111;
+}
+.tabContent input{
+	border: none;
+	background: #A1000A;
+	width: 116px;
+	height: 30px;
+	color: white;
+	border-radius: 10px;
+	background: -moz-linear-gradient(#dc4242,#be0000);
+	background: -webkit-linear-gradient(#dc4242,#be0000);
+}
+.tabContent input:active{
+	padding-left: 4px;
+}
+.tabContent h4{
+	margin-top: 40px;
+	font-weight: bold;
+}
+.tabContent .essay{
+	line-height: 26px;
+	text-indent: 2em;
+}
+.tabContent ul li{
+	line-height:30px;
+}
+.imgContent{
+	display:none;
+}
+.imgContent .img li{
+	float: left;
+	width: 164px;
+	margin-right:66px;
+	margin-bottom: 28px;
+}
+.imgContent .img li a{
+	text-decoration: none;
+}
+.imgContent .img li a:hover p{
+	color: red;
+}
+.imgContent .img li p {
+	color: #505050;
+	margin-top: 16px;
+	text-align: center;
+}
+.imgContent .img li img{
+	width: 100%;
+	border: 1px solid #ECECEC;
+}
+.imgContent .img li:nth-child(4n){
+	margin-right:0px;
+}
+
+/*联系我们的页面主体部分*/
+#container{
+	width: 860px;
+	height: 530px;
+}
+.rightContent .linkus h4{
+	line-height: 98px;
+	height: 98px;
+}
+.rightContent .linkus ul li{
+	line-height: 28px;
+	height: 28px;
+}
+/*联系我们的页面主体部分结束*/
+
+/*工程案例的主体部分*/
+.ennergin .img{
+	margin-top: 44px;
+}
+.ennergin .img li{
+	float: left;
+	width: 164px;
+	margin-right:66px;
+	margin-bottom: 28px;
+}
+.ennergin .img li a{
+	text-decoration: none;
+}
+.ennergin .img li a:hover p{
+	color: red;
+}
+.ennergin .img li p {
+	color: #505050;
+	margin-top: 16px;
+	text-align: center;
+}
+.ennergin .img li img{
+	width: 100%;
+	border: 1px solid #ECECEC;
+}
+.ennergin .img li:nth-child(4n){
+	margin-right:0px;
+}
+.ennergin .page ul{
+	text-align: center;
+}
+.ennergin .page ul li{
+	display: inline-block;
+	margin: 0 10px;
+}
+.ennergin .page ul li a{
+	color: #000000;
+}
+.ennergin .page ul li a:hover{
+	color: red;
+}
+/*工程案例的主体部分结束*/
+/*新闻中心*/
+.newsCenter .new li span{
+	float: right;
+}
+.newsCenter .new li {
+	overflow: hidden;
+	position: relative;
+	padding-left:18px;
+}
+.newsCenter .new li:before{
+	content: '';
+	display: block;
+	width:5px;
+	height:5px;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 13px;
+	background: #505050;
+	
+}
+.newsCenter .new li a{
+	float: left;
+	width: 574px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	line-height: 32px;
+	height: 32px;
+	color: #505050;
+}
+
+.newsCenter .new li:nth-child(1) a{
+	color:#BE030A ;
+}
+.newsCenter .new li:nth-child(1){
+	color:#BE030A ;
+}
+.newsCenter .new li:nth-child(1):before{
+	background-color:#BE030A ;
+}
+.newsCenter .new li:nth-child(2) a{
+	color:#3031FB ;
+}
+.newsCenter .new li:nth-child(2){
+	color:#3031FB ;
+}
+.newsCenter .new li:nth-child(2):before{
+	background-color:#3031FB ;
+}
+.newsCenter .new li:nth-child(3) a{
+	color:#FB7C30 ;
+}
+.newsCenter .new li:nth-child(3){
+	color:#FB7C30 ;
+}
+.newsCenter .new li:nth-child(3):before{
+	background-color:#FB7C30 ;
+}
+
+.page {
+	text-align: center;
+	margin-top: 40px;
+}
+.page a {
+    display: inline-block;
+    border: 1px solid #D9D7D7;
+    padding: 5px 10px;
+    margin: 4px;
+}
+.page a{
+	color: black;
+}
+.page .current {
+    background-color: #005095;
+    color: white;
+}
+
+/*关于我们部分*/
+.aboutCenter p{
+	line-height: 28px;
+	text-indent: 2em;
+}
+.aboutCenter .contentTitle{
+	margin-bottom: 40px;
+}
+/*招聘中心*/
+.employment .job{
+	background: #F1F3F8;
+}
+.employment .job li{
+	overflow: hidden;
+	padding: 24px;
+	background: white;
+	margin-bottom: 20px;
+}
+.employment .imgleft{
+	float: left;
+	margin-right: 40px;
+}
+.employment .right{
+	float: left;
+}
+.employment .right a{
+	display: inline-block;
+	font-size:18px;
+	text-decoration: none;
+	color: black;
+}
+.employment .right a:hover{
+	color: red;
+}
+.employment .right h4 img{
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom:5px;	
+}
+.employment .right h4 span{
+	display: inline-block;
+	
+}
+.employment .right p span {
+	color: #666666;
+}
+.employment .right p span:first-child{
+	width: 300px;
+	display: inline-block;
+}
+.employment .right p .sp1{
+	width: 300px;
+	display: inline-block;
+}
+
+
+

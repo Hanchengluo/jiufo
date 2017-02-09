@@ -1,0 +1,279 @@
+*{
+	font-family: Microsoft Yahei, Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 0px;
+    margin: 0px;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	display: block;
+	color: black;
+}
+img {
+	border: 0;
+	display:block;
+}
+h1 {
+	font-size:36px;
+}
+h2 {
+	font-size:30px;
+}
+h3 {
+	font-size:24px;
+}
+h4 {
+	font-size:18px;
+}
+h5 {
+	font-size:14px;
+}
+h6 {
+	font-size:12px;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.content{
+	width: 1200px;
+	margin: auto;
+}
+/*头部开始*/
+.wrapping{
+	padding-top: 130px;
+}
+.header{
+	position: fixed;
+	top: 0;left: 0;
+	width: 100%;
+	background: white;
+	z-index: 999;
+	height: 130px;
+}
+.headContent{
+	height: 130px;
+}
+.headContent p{
+	float: left;
+}
+.headContent ul{
+	float: right;
+}
+.headContent ul a{
+	font-size:16px;
+	color: black;
+	text-decoration: none;
+}
+.headContent ul a:hover{
+	background-color: #035194;
+	color: white;
+}
+.headContent ul li .current{
+	background-color: #035194;
+	color: white;
+	position: relative;
+}
+.headContent ul li .current:after{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+	left: 50px;
+	border:10px solid transparent;
+	border-bottom:10px solid white;
+}
+.headContent li{
+	float: left;
+	width: 120px;
+	line-height: 130px;
+	text-align: center;
+	border-left: 1px solid #EDEDED;
+}
+.headContent li:first-child{
+	border-left: none;
+}
+/*头部结束*/
+/*内容部分*/
+/*侧栏*/
+.content .slidebar{
+	float: left;
+	width: 248px;
+	padding-top: 26px;
+}
+.content .slidebar .slide_section1 h3{
+	border-bottom: 1px solid #D1D1D1;
+	font-size: 18px;
+	color:black;
+	line-height: 34px;
+	height: 38px;
+}
+.content .slidebar .slide_section1 h3 span{
+	display: inline-block;
+	width: 14px;
+	height:20px;
+	background-color: #035194;
+	margin-right: 8px;
+	margin-bottom: -2px;
+}
+.content .slidebar .slide_section1 ul li{
+	border-bottom: 2px solid #F1F1F1;
+	line-height: 38px;
+	color: #505050;
+}
+.content .slidebar .slide_section1 ul li span{
+	margin-right: 10px;
+}
+.content .slidebar .slide_section1 ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color:#505050;
+}
+.content .slidebar .title{
+	border-bottom: 1px solid #D1D1D1;
+	font-size: 18px;
+	color:black;
+	line-height: 34px;
+	height: 38px;
+	margin-top: 30px;
+	
+}
+/*侧栏第二部分*/
+.content .slidebar .title span{
+	display: inline-block;
+	width: 14px;
+	height:20px;
+	background-color: #035194;
+	margin-right: 8px;
+	margin-bottom: -2px;
+}
+.content .slidebar .title a{
+	display: inline-block;
+	text-decoration: none;
+	color:#515151 ;
+	float: right;
+}
+.content .slidebar .title a:hover{
+	color: red;
+}
+.slide_section2 ul li{
+	color: #505050;
+	line-height: 38px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.slide_section2 ul li span{
+	margin-right: 10px;
+	color: #035194;
+}
+.slide_section2 ul li a{
+	color: #505050;
+	
+}
+
+.slide_section3 .imgleft{
+	width: 90px;
+	float: left;
+}
+.slide_section3 .imgleft img{
+	width: 100%;
+}
+.slide_section3 .textright{
+	float: right;
+}
+.slide_section3 .textright li{
+	color: #505050;
+	line-height: 32px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+/*右侧主题内容*/
+.content .rightContent{
+	float: right;
+	width: 914px;
+	border: 1px solid #E9E9E9;
+	padding: 28px;
+	margin-top: 58px;
+	margin-bottom: 100px;	
+}
+.content .rightContent .contentTitle{
+	background-color: #202744;
+	color: white;
+	padding-left: 20px;
+	line-height: 32px;
+}
+.content .rightContent .contentTitle span{
+	margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部部分*/
+.foot {
+	text-align: center;
+	background-color: #454545;
+	color: white;
+	padding-bottom:30px;
+	position: relative;
+}
+.foot:after{
+	content:'';
+	display: block;
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	margin-left: -30px;
+	color: red;
+	border: 30px solid transparent;
+	border-bottom:30px solid #454545 ;
+}
+.foot ul li a{
+	color: white;
+	display: inline-block;
+}
+.foot ul li a:hover{
+	color: red;
+}
+.foot ul li{
+	display: inline-block;
+	padding: 37px 10px;
+}
+.foot .phone p{
+	color: #B1B1B1;
+	margin-bottom: 5px;
+}
+.totop{
+	position: absolute;
+	left: 50%;
+	top: -15px;
+	margin-left: -13px;
+	color: white;
+	z-index: 10;
+}
+.totop:hover{
+	color: red;
+}

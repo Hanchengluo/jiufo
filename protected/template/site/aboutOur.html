@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>九佛电器-关于我们</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+   		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+   		<link rel="stylesheet" type="text/css" href="css/aboutus.css"/>
+	</head>
+	<body>
+		<div class="wrapping">
+			<!--头部开始-->
+			<div class="header">
+				<div class="headContent content clearfix">
+					<p><img src="img/index_02.jpg"/></p>
+					<ul class="clearfix">
+						<li><a href="index.php?c=index" >首页</a></li>
+						<li><a href="index.php?c=aboutOur" class="current">关于我们</a></li>
+						<li><a href="index.php?c=projectdemo">工程案例</a></li>
+						<li><a href="index.php?c=news" >新闻中心</a></li>
+						<li><a href="index.php?c=product" >产品中心</a></li>
+						<li><a href="index.php?c=job" >人才招聘</a></li>
+						<li><a href="index.php?c=contact">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--头部结束-->
+			<!--banner图开始-->
+			<div class="banner">
+				<img src="img/index_05.jpg"/>
+			</div>
+			<!--banner结束-->
+			<!--内容部分开始-->
+			<div class="content clearfix">
+				<div class="slidebar">
+					<div class="slide_section1">	
+						<h3><span></span>关于九佛电器</h3>
+						<ul>
+							<li><span class="glyphicon glyphicon-play"></span><a href="index.php?c=aboutOur">关于九佛电器</a></li>
+							<li><span class="glyphicon glyphicon-play"></span><a href="index.php?c=aboutOur&s=honor">荣誉资质</a></li>
+							<li><span class="glyphicon glyphicon-play"></span><a href="index.php?c=contact">联系九佛电器</a></li>
+						</ul>
+					</div>
+					<div class="slide_section2">
+						<h3 class="title clearfix"><span></span>常见问题<a href="#">more>></a></h3>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>请问贵公司的售后是如何</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>贵公司的产品在网上能买到吗?</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>汉王淘宝官方旗舰店是正宗吗?</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>汉王淘宝官方旗舰店是正宗吗?</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>请问贵公司的售后是如何</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>汉王淘宝官方旗舰店是正宗吗?</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>汉王淘宝官方旗舰店是正宗吗?</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>请问贵公司的售后是如何</a></li>
+						</ul>
+					</div>
+					<div class="slide_section3">
+						<h3 class="title clearfix"><span></span>售后服务<a href="#">more>></a></h3>
+						<div class="server clearfix">
+							<div class="imgleft">
+								<img src="img/mm.png"/>
+							</div>
+							<ul class="textright">
+								<li>400-810-8816</li>
+								<li>或95105918 (免长话费)</li>
+								<li>正常工作时间：</li>
+								<li>周一至周五 9:00-18:00</li>
+								<li>其他时间有人值班 </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="rightContent">
+					<div class="aboutCenter">
+						<h4 class="contentTitle"><?php echo $row["title"]?><span>ABOUT US</span></h4>
+						<?php echo $row["content"]?>
+					</div>
+				</div>
+			</div>
+			<!--内容部分结束-->
+			<!--尾部开始-->
+			<div class="foot">
+				<div class="content">
+					<ul>
+						<li><a href="index.php?c=aboutOur">关于我们</a></li>
+						<li><a href="index.php?c=projectdemo">工程案例</a></li>
+						<li><a href="index.php?c=news" >新闻中心</a></li>
+						<li><a href="index.php?c=product" >产品中心</a></li>
+						<li><a href="index.php?c=job" >人才招聘</a></li>
+						<li><a href="index.php?c=contact">联系我们</a></li>
+					</ul>
+					<div class="phone">
+						<p>公司：广州市九佛电器有限公司   厂址：广州市白云区广华路137号   </p>
+						<p>电话：8620-87491238　传真：8620-87491582邮编：510555  电子信箱：jiufo@jiufo-electric.com.cn</p>
+					</div>
+					<a href="#" class="totop">TOP</a>
+				</div>
+			</div>
+			<!--尾部结束-->
+		</div>
+	</body>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/checkIE.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/tween.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/commond.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>九佛电器</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="wrapping">
+			<!--头部开始-->
+			<div class="header">
+				<div class="headContent content clearfix">
+					<p><img src="img/index_02.jpg" /></p>
+					<ul class="clearfix">
+						<li><a href="index.php?c=index" class="current">首页</a></li>
+						<li><a href="index.php?c=aboutOur">关于我们</a></li>
+						<li><a href="index.php?c=projectdemo">工程案例</a></li>
+						<li><a href="index.php?c=news" >新闻中心</a></li>
+						<li><a href="index.php?c=product" >产品中心</a></li>
+						<li><a href="index.php?c=job" >人才招聘</a></li>
+						<li><a href="index.php?c=contact">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--头部结束-->
+			<!--banner开始-->
+			<div class="banner">
+				<ul class="clearfix">
+					<img src="img/banner1.png" />
+					<img src="img/banner2.png" />
+					<img src="img/banner3.png" />
+					<img src="img/banner4.png" />
+					<img src="img/banner1.png" />
+				</ul>
+				<p class="dot">
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</p>
+				<div class="content">
+					<div class="bannerContent">
+						<h1>光明大众	智慧未来</h1>
+						<p>Light mass, the wisdom of the future</p>
+					</div>
+            		<div class="form clearfix">
+                        <input type="text"placeholder="搜索您需要的产品" class="key">
+                        <input type="submit" value="搜索" class="search">
+                    </div>
+				</div>
+			</div>
+			<!--banner结束-->
+			<!--内容部分-->
+			<div class="content main">
+				<div class="section1">
+					<div class="title">
+						<h3>产品中心</h3>
+						<p>Product center</p>
+					</div>
+					<ul class="clearfix product">
+						<?php foreach($resultarrc as $row){?> 
+							<li>
+								<a href="index.php?c=product&id=<?php echo $row['id']?>"><img src="<?php echo $row['img']?>"/>
+									<p><?php echo $row['title']?> <img src="img/dot_03.jpg" /></p>
+								</a>
+							</li>
+						<?php }?>
+						<li class="last">
+							<a href="index.php?c=projectdemo">MORE</a>
+						</li>
+					</ul>
+					<div class="page">
+						<?php echo $str?>
+					</div>
+				</div>
+				<div class="section2">
+					<div class="title">
+						<h3>关于我们</h3>
+						<p>About us</p>
+					</div>
+					<ul class="clearfix">
+						<li>
+							<a href="index.php?c=aboutOur&s=about">
+								<img src="img/our_07.jpg" />
+								<div class="text">
+									<h3>公司简介</h3>
+									<p>
+										广州市九佛电器有限公司是具有二十多年专业生产荧光灯具、应急灯具、节能灯具、荧光灯电感、电子镇流器、高压气体放电灯镇流器、小型变压器、开关插座、排气扇、电线电缆等照明产品的企业，是中国生产荧光灯具、荧光灯镇流器产品最大。
+									</p>
+									<span class="s1"></span>
+									<span class="s2"></span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="index.php?c=aboutOur&s=culture" class="current">
+								<img src="img/our_09.jpg" />
+								<div class="text current">
+									<h3>企业文化</h3>
+									<p>
+										人才是企业的资本，人才是最宝贵的财富，九佛的大门对所有有志于事业的人敞开着。企业愿景，让九佛成为国家顶级品牌！企业使命，为社会：致力于持续改善人们信息沟通的效率与品质，为客户：为客户创造价值，客户的成功就是我们的骄傲
+									</p>
+									<span class="s1"></span>
+									<span class="s2"></span>
+								</div>
+							</a>
+						</li>
+						<li class="last">
+							<a href="index.php?c=aboutOur&s=honor">
+								<img src="img/our_12.png" />
+								<div class="text">
+									<h3>公司荣誉</h3>
+									<p>
+										08年中国驰名商标，产品标志证书，广东省名牌产品，广州市著名商标证书，广州市著名商标证书2，广州市著名商标证书3，广州市著名商标证书4，品牌、商标创新先进单位，绿色照明定点企业。
+									</p>
+									<span class="s1"></span>
+									<span class="s2"></span>
+								</div>
+							</a>
+
+						</li>
+					</ul>
+				</div>
+				<div class="section3">
+					<div class="title">
+						<h3>新闻中心</h3>
+						<p>New center</p>
+					</div>
+					<div class="imggaller">
+						<ul class="clearfix">
+							<li>
+								<a href="#"><img src="img/new2 (4).png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/new_07.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/new.png" /></a>
+							</li>
+						</ul>
+						<div class="clearfix two">
+							<li>
+								<a href="#"><img src="img/new2 (2).png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/new2 (3).png" /></a>
+							</li>
+						</div>
+					</div>
+					<div class="news">
+						<h3><a href="index.php?c=news">公司新闻</a></h3>
+						<div id="indexNew">
+							<ul class="clearfix">
+							<?php foreach($resultarr as $row){?> 
+								<li><a href=""><?php echo $row["content"]?></a> <span><?php echo $row["mktime"]?></span></li>
+							<?php }?>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--尾部开始-->
+			<div class="foot">
+				<div class="content">
+					<ul>
+						<li><a href="index.php?c=aboutOur">关于我们</a></li>
+						<li><a href="index.php?c=projectdemo">工程案例</a></li>
+						<li><a href="index.php?c=news" >新闻中心</a></li>
+						<li><a href="index.php?c=product" >产品中心</a></li>
+						<li><a href="index.php?c=job" >人才招聘</a></li>
+						<li><a href="index.php?c=contact">联系我们</a></li>
+					</ul>
+					<div class="phone">
+						<p>公司：广州市九佛电器有限公司 厂址：广州市白云区广华路137号 </p>
+						<p>电话：8620-87491238　传真：8620-87491582邮编：510555 电子信箱：jiufo@jiufo-electric.com.cn</p>
+					</div>
+					<a href="#" class="totop">TOP</a>
+				</div>
+			</div>
+			<!--尾部结束-->
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/checkIE.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/tween.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lunbo.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/commond.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/new.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".page").on("click", "a", function() {
+			var url = $(this).attr('href');
+			$.ajax({
+				type: "get",
+				url: url,
+				dataType: "json",
+				success: function(msg) {
+					$(".page").html(msg.str);
+					var str = '';
+					for(var i = 0; i < msg.result.length; i++) {
+						str+='<li><a href="index.php?c=product&id='+msg.result[i].id+'"><img src="'+msg.result[i].img+'"/>';
+						str+='<p>'+msg.result[i].title+' <img src="img/dot_03.jpg" /></p></a></li>';
+					}
+					str+='<li class="last"><a href="index.php?c=projectdemo">MORE</a></li>';
+					$(".product").html(str);
+				}
+			});
+			return false;
+		});
+		$(".search").on("click",function(){
+			if($('.key').val()!=''){
+				var skey=$('.key').val();
+				window.location.href='index.php?c=product&key='+skey+'';
+			}
+		})
+	</script>
+
+</html>

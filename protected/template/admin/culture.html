@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Simpla Admin</title>
+		<!--                       CSS                       -->
+		<!-- Reset Stylesheet -->
+		<link rel="stylesheet" href="resources/css/reset.css" type="text/css" media="screen" />
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="resources/css/style.css" type="text/css" media="screen" />
+		<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+		<link rel="stylesheet" href="resources/css/invalid.css" type="text/css" media="screen" />
+		<!--                       Javascripts                       -->
+		<!-- jQuery -->
+		<script type="text/javascript" src="resources/scripts/jquery-1.3.2.min.js"></script>
+		<!-- jQuery Configuration -->
+		<script type="text/javascript" src="resources/scripts/simpla.jquery.configuration.js"></script>
+		<!-- Facebox jQuery Plugin -->
+		<script type="text/javascript" src="resources/scripts/facebox.js"></script>
+		<!-- jQuery WYSIWYG Plugin -->
+		<script type="text/javascript" src="resources/scripts/jquery.wysiwyg.js"></script>
+		<!-- jQuery Datepicker Plugin -->
+		<script type="text/javascript" src="resources/scripts/jquery.datePicker.js"></script>
+		<script type="text/javascript" src="resources/scripts/jquery.date.js"></script>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="resources/scripts/aboutOur.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js">
+		</script>
+		<!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+		<!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+		<script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+		<style type="text/css">
+			.imghead {
+				text-align: center;
+			}
+			
+			#sidebar #logo {
+				margin: 40px 0 10px 0;
+			}
+			
+			#sidebar #profile-links {
+				padding: 20px 15px 20px 15px;
+				text-align: center;
+				line-height: 1.5em;
+			}
+			
+			.content-box {
+				border: 1px solid #ccc;
+				/* margin: 0 0 20px 0; */
+				background: #fff;
+				margin: auto;
+				display: inline-block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="body-wrapper">
+			<!-- Wrapper for the radial gradient background -->
+			<div id="sidebar">
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title"><a href="#">Simpla Admin</a></h1>
+					<!-- Logo (221px wide) -->
+					<a href="http://www.865171.cn"><img id="logo" src="resources/images/logo.png" alt="Simpla Admin logo" /></a>
+					<!-- Sidebar Profile links -->
+					<div class="imghead">
+						<img src="resources/images/avtar.png" />
+					</div>
+					<div id="profile-links">
+						<a href="index.php?f=site&c=index" title="View the Site">浏览首页</a> |
+						<a href="index.php?f=admin&c=login" title="Sign Out">退出</a>
+					</div>
+					<ul id="main-nav">
+						<li>
+							<a href="#" class="nav-top-item ">
+								新闻中心</a>
+							<ul>
+								<li>
+									<a  href="index.php?f=admin&c=index">管理新闻</a>
+								</li>
+								<li>
+									<a href="index.php?f=admin&c=add" >添加新闻</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="nav-top-item ">
+								产品中心</a>
+							<ul>
+								<li>
+									<a href="index.php?f=admin&c=mproduct">管理产品</a>
+								</li>
+								<li>
+									<a href="index.php?f=admin&c=product" >添加产品</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="nav-top-item ">
+								人才招聘</a>
+							<ul>
+								<li>
+									<a  href="index.php?f=admin&c=job" >招聘列表	</a>
+								</li>
+								<li>
+									<a href="index.php?f=admin&c=addjob" >添加招聘</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="nav-top-item current">
+								关于我们</a>
+							<ul>
+								<li>
+									<a  href="index.php?f=admin&c=aboutOur">关于我们</a>
+								</li>
+								<li>
+									<a  href="index.php?f=admin&c=culture" class="current" >公司文化</a>
+								</li>
+								<li>
+									<a  href="index.php?f=admin&c=honor" >公司荣誉</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="nav-top-item"> 管理员模块 </a>
+							<ul>
+								<li>
+									<a href="index.php?f=admin&c=manager">管理员列表</a>
+								</li>
+								<li>
+									<a href="index.php?f=admin&c=addManager">添加管理员</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- End #main-nav -->
+					<div id="messages" style="display: none">
+						<!-- Messages are shown when a link with these attributes are clicked: href="#messages" rel="modal"  -->
+						<h3>3 Messages</h3>
+						<p> <strong>17th May 2009</strong> by Admin<br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. <small><a href="#" class="remove-link" title="Remove message">Remove</a></small> </p>
+						<p> <strong>2nd May 2009</strong> by Jane Doe<br /> Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est. <small><a href="#" class="remove-link" title="Remove message">Remove</a></small> </p>
+						<p> <strong>25th April 2009</strong> by Admin<br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. <small><a href="#" class="remove-link" title="Remove message">Remove</a></small> </p>
+						<form action="#" method="post">
+							<h4>New Message</h4>
+							<fieldset>
+								<textarea class="textarea" name="textfield" cols="79" rows="5"></textarea>
+							</fieldset>
+							<fieldset>
+								<select name="dropdown" class="small-input">
+									<option value="option1">Send to...</option>
+									<option value="option2">Everyone</option>
+									<option value="option3">Admin</option>
+									<option value="option4">Jane Doe</option>
+								</select>
+								<input class="button" type="submit" value="Send" />
+							</fieldset>
+						</form>
+					</div>
+					<!-- End #messages -->
+				</div>
+			</div>
+			<!-- End #sidebar -->
+			<div id="main-content">
+				<!-- Main Content Section with everything -->
+				<noscript>
+    <!-- Show a notification if the user has disabled javascript -->
+    <div class="notification error png_bg">
+      <div> Javascript is disabled or is not supported by your browser. Please <a href="http://browsehappy.com/" title="Upgrade to a better browser">upgrade</a> your browser or <a href="http://www.google.com/support/bin/answer.py?answer=23852" title="Enable Javascript in your browser">enable</a> Javascript to navigate the interface properly.
+        Download From <a href="http://www.exet.tk">exet.tk</a></div>
+    </div>
+    </noscript>
+				<!-- Page Head -->
+				<h2>Welcome <?php echo $_SESSION["name"];?></h2>
+				<ul class="shortcut-buttons-set">
+					<li>
+						<a class="shortcut-button" href="index.php?f=admin&c=add"><span> <img src="resources/images/icons/pencil_48.png" alt="icon" /><br />
+       	添加新闻</span></a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="index.php?f=admin&c=aboutOur"><span> <img src="resources/images/icons/paper_content_pencil_48.png" alt="icon" /><br />
+                        添加简介</span></a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="index.php?f=admin&c=product"><span> <img src="resources/images/icons/image_add_48.png" alt="icon" /><br />
+    	添加产品</span></a>
+					</li>
+					<!--<li>
+						<a class="shortcut-button" href="#"><span> <img src="resources/images/icons/clock_48.png" alt="icon" /><br />
+        Add an Event </span></a>
+					</li>-->
+					<li>
+						<a class="shortcut-button" href="http://localhost/phpmyadmin/#PMAURL-0:index.php?db=&table=&server=1&target=&token=7f8baf10fb9cecb9797cb7a1d1094912" rel="modal"><span> <img src="resources/images/icons/comment_48.png" alt="icon" /><br />
+                        打开数据库 </span></a>
+					</li>
+				</ul>
+				<!-- End .shortcut-buttons-set -->
+				<div class="clear"></div>
+				<!-- End .clear -->
+				<div class="content-box">
+					
+					<form action="index.php?f=admin&c=culture" method="post" id="uedit">
+						<fieldset>
+							<!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+							<p>
+								<label>题目</label>
+								<input class="text-input small-input" type="text" id="small-input" name="title" value="公司文化" readonly="true"/>
+								<span class="input-notification  png_bg"></span>
+								<!-- Classes for input-notification: success, error, information, attention -->
+								<br />
+
+								<input type="hidden" name="content" id="content"/>
+							</p>
+							<input type="hidden" name="old" id="old" value="<?php echo $row[content]?>"/>
+							<p><label>正文</label></p>
+							<script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+							<p>
+								<input class="button" type="button" value="获取原内容" id="ok"/>
+								<input class="button" type="submit" value="提交" />
+							</p>
+						</fieldset>
+						<div class="clear"></div>
+					</form>
+				</div>
+				<!-- End .content-box -->
+				<!-- End Notifications -->
+				<div id="footer"> <small>
+      <!-- Remove this notice or replace it with whatever you want -->
+      &#169; Copyright 2010 Your Company | Powered by <a href="http://www.865171.cn">admin templates</a> | <a href="#">Top</a> </small> </div>
+				<!-- End #footer -->
+			</div>
+			<!-- End #main-content -->
+		</div>
+	</body>
+	<!-- Download From www.exet.tk-->
+	<script type="text/javascript">
+		var ue = UE.getEditor('editor');
+		function isFocus(e) {
+			alert(UE.getEditor('editor').isFocus());
+			UE.dom.domUtils.preventDefault(e)
+		}
+
+		function setblur(e) {
+			UE.getEditor('editor').blur();
+			UE.dom.domUtils.preventDefault(e)
+		}
+
+		function insertHtml() {
+			var value = prompt('插入html代码', '');
+			UE.getEditor('editor').execCommand('insertHtml', value)
+		}
+
+		function createEditor() {
+			enableBtn();
+			UE.getEditor('editor');
+		}
+
+		function getAllHtml() {
+			alert(UE.getEditor('editor').getAllHtml())
+		}
+
+		function getContent() {
+			var arr = [];
+			arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+			arr.push("内容为：");
+			arr.push(UE.getEditor('editor').getContent());
+			alert(arr.join('\n'))
+			document.getElementById("uedit").content.value=arr.join("\n");
+		}
+
+		function getPlainTxt() {
+			var arr = [];
+			arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+			arr.push("内容为：");
+			arr.push(UE.getEditor('editor').getPlainTxt());
+			alert(arr.join('\n'))
+		}
+
+		function setContent(isAppendTo) {
+			var arr = [];
+			UE.getEditor('editor').setContent('欢迎使用ueddfgitor', isAppendTo);
+		}
+		function setDisabled() {
+			UE.getEditor('editor').setDisabled('fullscreen');
+			disableBtn("enable");
+		}
+
+		function setEnabled() {
+			UE.getEditor('editor').setEnabled();
+			enableBtn();
+		}
+
+		function getText() {
+			//当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+			var range = UE.getEditor('editor').selection.getRange();
+			range.select();
+			var txt = UE.getEditor('editor').selection.getText();
+			alert(txt)
+		}
+
+		function getContentTxt() {
+			var arr = [];
+			arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+			arr.push("编辑器的纯文本内容为：");
+			arr.push(UE.getEditor('editor').getContentTxt());
+			alert(arr.join("\n"));
+		}
+
+		function hasContent() {
+			var arr = [];
+			arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+			arr.push("判断结果为：");
+			arr.push(UE.getEditor('editor').hasContents());
+			alert(arr.join("\n"));
+		}
+
+		function setFocus() {
+			UE.getEditor('editor').focus();
+		}
+
+		function deleteEditor() {
+			disableBtn();
+			UE.getEditor('editor').destroy();
+		}
+
+		function disableBtn(str) {
+			var div = document.getElementById('btns');
+			var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+			for(var i = 0, btn; btn = btns[i++];) {
+				if(btn.id == str) {
+					UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+				} else {
+					btn.setAttribute("disabled", "true");
+				}
+			}
+		}
+
+		function enableBtn() {
+			var div = document.getElementById('btns');
+			var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+			for(var i = 0, btn; btn = btns[i++];) {
+				UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+			}
+		}
+
+		function getLocalData() {
+			alert(UE.getEditor('editor').execCommand("getlocaldata"));
+		}
+
+		function clearLocalData() {
+			UE.getEditor('editor').execCommand("clearlocaldata");
+			alert("已清空草稿箱")
+		}
+		
+	</script>
+
+</html>
